@@ -1,0 +1,52 @@
+@import "_font"
+
+body
+	font: 16px "Proxima"
+	line-height: 1
+	height: 100%
+
+$browser-context: 16
+
+@function calc-em($target-px, $context)
+	@return ($target-px / $context) * 1em
+
+@function em($pixels, $context: $browser-context)
+	@return ($pixels / $context) * 1em
+
+$green: #86B572
+$green-hover: #ADDB9A
+$blue: #016F86
+$blue-hover: #5AB3C5
+$disabled: #E0E0E0
+
+@mixin flex($flex-direction,$align-items,$justify-content)
+	@if $flex-direction == none and $align-items == none
+		justify-content: $justify-content
+
+	@else if $flex-direction == none
+		justify-content: $justify-content
+		align-items: $align-items
+
+	@else if $align-items == none
+		justify-content: $justify-content
+		flex-direction: $flex-direction
+
+	@else if $flex-direction == column
+		align-content: $align-items
+		flex-direction: $flex-direction
+		justify-content: $justify-content
+	@else if $justify-content == none
+		align-items: $align-items
+	@else
+		align-items: $align-items
+		flex-direction: $flex-direction
+		justify-content: $justify-content
+
+@mixin btn-size($font,$width,$height)
+	font-size: em($font)
+	width: em($width, $font)
+	height: em($height, $font)
+
+@import "../components/_buttons"
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calc</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<div class="calc-container">
+					<div class="flx">
+						<a class="btn btn-tab active" href="">Геодезия</a>
+						<a class="btn btn-tab" href="">Геология</a>
+					</div>
+					<div class="calc-tab-content">
+						<form action="" method="POST" class="tab-form">
+							<div class="input-group">
+								<div class="input-row">
+									<span class="tab-content-title">Размеры здания:</span>
+								</div>
+								<div class="input-row">
+									<select class="custom-select" name="size" id="size">
+										<option class="control-item">до 15х15 м</option>
+										<option class="control-item">до 20х20 м</option>
+										<option class="control-item">до 30х30 м</option>
+										<option class="control-item">до 40х40 м</option>
+										<option class="">до 100х100 м</option>
+									</select>
+								</div>
+							</div>
+							<div class="input-group">
+								<div class="input-row">
+									<span class="tab-content-title">Площадь участка (в сотках)</span>
+								</div>
+								<div class="input-row flx">
+									<input class="input-radio" id="first-floor" name="first-floor" type="radio">
+									<label class="custom-radio" for="first-floor">Один</label>
+								</div>
+								<div class="input-row flx">
+									<input class="input-radio" id="second-floor" name="first-floor" type="radio">
+									<label class="custom-radio" for="second-floor">Два</label>
+								</div>
+								<div class="input-row flx">
+									<input class="input-radio" id="third-floor" name="first-floor" type="radio">
+									<label class="custom-radio" for="third-floor">Три</label>
+								</div>
+								<div class="input-row flx">
+									<input class="input-radio" id="four-floor" name="first-floor" type="radio">
+									<label class="custom-radio" for="four-floor">Четыре</label>
+								</div>
+								<div class="input-row flx">
+									<input class="input-checkbox" id="basement" name="basement" type="checkbox">
+									<label class="custom-checkbox" for="basement">Подвал</label>
+								</div>
+							</div>
+							<div class="input-row flx">
+								<input class="btn btn-xs" type="submit" value="Рассчитать">
+							</div>
+
+						</form>
+					</div>
+				</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+input[type="checkbox"],
+input[type="radio"]
+	display: none
+.input-row
+	position: relative
+	p
+		font-size: 14px
+	&:not(:last-of-type)
+		margin-bottom: 40px
+[class*=user]
+	border-bottom: 1px solid #979797
+	&:before
+			content: ''
+			position: absolute
+			left: 0
+			width: 30px
+			height: 30px	
+.input-text
+	width: 100%
+	height: 41px
+	padding-left: 38px
+	height: 40px
+	font-size: em(18)
+	border: 0
+	right: 0
+	&::placeholder
+		color: #000
+
+[class*=custom]
+	position: relative
+	cursor: pointer
+	font-size: 14px
+	&:before
+		content: ''
+		position: absolute
+		cursor: pointer
+.custom-checkbox
+	margin-left: 30px
+	&:before
+		left: -34px
+		width: 24px
+		height: 24px
+		border: 1px solid #979797
+.input-checkbox:checked ~ .custom-checkbox:before
+	background: url(../image/done.svg) no-repeat center
+.custom-radio
+	align-items: center
+	margin-left: 34px
+	&:before
+		width: 20px
+		height: 20px
+		transform: translateY(-25%)
+		left: -34px
+		border: 2px solid #000
+		border-radius: 50%
+.input-radio:checked ~ .custom-radio:before
+	border: none
+	background: url(../image/selected.svg)	
+.input-group
+	margin-bottom: 10px
+	.input-row
+		margin-bottom: 15px

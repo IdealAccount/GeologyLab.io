@@ -1,0 +1,48 @@
+article
+	position: relative
+	padding: 10px 0 24px 0
+	height: 287px
+	overflow: hidden
+	border-bottom: 3px solid $blue-hover
+	&.active
+		height: 100%
+		& .more
+			transform: translateX(-50%) rotate(180deg)
+.more
+	position: absolute
+	cursor: pointer
+	width: 20px
+	height: 20px
+	padding: 0
+	border-radius: 50%
+	border: none
+	bottom: 5px
+	left: 50%
+	transition: .4s
+	transform: translateX(-50%)
+	background: none
+.disabled
+	background: $disabled
+.post-title
+	font-size: em(24)
+	line-height: em(38,24)
+	font-weight: bold
+	letter-spacing: 0.03em
+	margin-left: 15px
+	margin-bottom: 10px
+	text-transform: uppercase
+.post-date
+	font-size: 12px
+.post-content
+	margin-top: 10px
+	font-size: 17px
+	line-height: 27px
+
+@each $name in wild, bh
+	.bg-#{$name}
+		background: url(../image/#{$name}.png) no-repeat
+
+[class*=bg]
+	height: 75px
+	margin-bottom: 20px
+	

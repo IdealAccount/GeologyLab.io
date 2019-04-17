@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>request-form</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<form action="" method="POST" class="request-call">
+		<div class="form-close flx-c">
+			<img src="../image/close.svg" alt="">
+		</div>
+		<div class="form-caption flx-c">Заказать звонок</div>
+		<div class="form-content"><!-- class add success -->
+			<div class="alert-success">
+				<p>Спасибо!</p>
+				<span>Заявка успешно отправлена.</span>
+			</div>
+			<div class="input-row user-name">
+				<input class="input-text" type="text" placeholder="Ваше имя">
+			</div>
+			<div class="input-row user-phone">
+				<input class="input-text" type="text" value="+7" placeholder="+7">
+			</div>
+			<div class="input-row">
+				<input class="input-checkbox" type="checkbox" id="checkbox" name="agree">
+				<label class="custom-checkbox flx-c" for="checkbox">Согласен на обработку персональных данных</label>
+			</div>
+			<div class="input-row flx">
+				<input class="btn btn-lg" type="submit" value="заказать звонок">
+			</div>
+		</div>
+	</form>
+</body>
+</html>

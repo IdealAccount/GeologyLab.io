@@ -1,0 +1,29 @@
+.wrapper
+	max-width: 1440px
+	margin: 0 auto
+	min-height: 100%
+	height: auto
+	display: flex
+	flex-direction: column
+
+.container 
+	max-width: 1025px
+	width: 100%
+	margin: 0 auto
+
+[class*=flx]
+	display: flex
+.flx
+	&-c
+		@include flex(none,center,center)
+	&-sb
+		@include flex(none,none,space-between)
+	&-c-sb
+		@include flex(none,center,space-between)
+	&-col-sb
+		@include flex(column,space-between,space-between)
+	&-col-c
+		@include flex(column,flex-start,center)
+	&-col-end
+		align-self: flex-end
+		@include flex(column,none,space-between)
